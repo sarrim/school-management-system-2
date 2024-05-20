@@ -3,10 +3,10 @@
     @php
 
     $totalStudent = DB::table('users')
-        ->where('usertype', 'Student')
+        ->where('user_type', 'Student')
         ->count();
     $totalEmployee = DB::table('users')
-        ->where('usertype', 'Employee')
+        ->where('user_type', 'Employee')
         ->count();
 
     @endphp

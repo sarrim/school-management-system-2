@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('backend/images/favicon.ico') }}">
 
-    <title>Your Brand - Masuk </title>
+    <title>School Management - SolCBE </title>
 
     <!-- Vendors Style-->
     <link rel="stylesheet" href="{{ asset('backend/css/vendors_css.css') }}">
@@ -29,7 +29,7 @@
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-4 col-md-5 col-12">
                         <div class="content-top-agile p-10">
-                            <h2 class="text-white">MASUK</h2>
+                            <h2 class="text-white">SolCBE</h2>
                             <p class="text-white-50">School Management System</p>
                         </div>
                         <div class="p-30 rounded30 box-shadowed b-2 b-dashed">
@@ -50,25 +50,25 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  bg-transparent text-white"><i class="ti-lock"></i></span>
                                         </div>
-                                        <input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Kata Sandi" required autocomplete="current-password">
+                                        <input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Enter Password" required autocomplete="current-password">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="checkbox text-white">
                                             <input name="remember" type="checkbox" id="basic_checkbox_1">
-                                            <label for="basic_checkbox_1">Ingat Saya</label>
+                                            <label for="basic_checkbox_1">Remember Me</label>
                                         </div>
                                     </div>
                                     <!-- /.col -->
                                     <div class="col-6">
                                         <div class="fog-pwd text-right">
-                                            <a href="{{ route('password.request') }}" class="text-white hover-info"><i class="ion ion-locked"></i> Lupa Sandi?</a><br>
+                                            <a href="{{ route('password.request') }}" class="text-white hover-info"><i class="ion ion-locked"></i> Forgot Password?</a><br>
                                         </div>
                                     </div>
                                     <!-- /.col -->
                                     <div class="col-12 text-center">
-                                        <button type="submit" class="btn btn-info btn-rounded mt-10">MASUK</button>
+                                        <button type="submit" class="btn btn-info btn-rounded mt-10">Login</button>
                                     </div>
                                     <!-- /.col -->
                                 </div>
@@ -85,7 +85,7 @@
                             </div> -->
 
                             <div class="text-center">
-                                <p class="mt-15 mb-0 text-white">Belum punya akun? <a href="{{ route('register') }}" class="hover-info ml-5">Daftar</a></p>
+                                <p class="mt-15 mb-0 text-white">Do not have an account? <a href="{{ route('register') }}" class="hover-info ml-5">Register</a></p>
                             </div>
                         </div>
                     </div>

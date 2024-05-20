@@ -1,21 +1,21 @@
 @php
-date_default_timezone_set('Asia/Jakarta');
+date_default_timezone_set('Asia/Karachi');
 $user = DB::table('users')
     ->where('id', Auth::user()->id)
     ->first();
-$words = explode(' ', $user->name);
+$words = explode(' ', $user->full_name);
 $name = $words[0];
 $date = date('H');
 $greeting = '';
 
 if ($date >= 3 && $date < 12) {
-    $greeting="Selamat Pagi, " . $name;
+    $greeting="Good Morning, " . $name;
     $icon="fa fa-solid fa-cloud-sun";
 } elseif ($date >= 12 && $date <= 15) {
-    $greeting="Selamat Siang, " . $name;
+    $greeting="Good Afternoon, " . $name;
     $icon="fa fa-solid fa-sun";
 } elseif ($date > 15 && $date < 18) {
-    $greeting="Selamat Sore, " . $name;
+    $greeting="Good Evening, " . $name;
     $icon="fa fa-solid fa-cloud-moon";
 } else {
     $greeting="Selamat Malam, " . $name;

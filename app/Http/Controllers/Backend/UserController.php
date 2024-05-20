@@ -16,7 +16,7 @@ class UserController extends Controller
     public function UserView()
     {
         // $allData = User::all();
-        $data['allData'] = User::where('usertype', 'Admin')->get();
+        $data['allData'] = User::where('user_type', 'Admin')->get();
         return view('backend.user.view_user', $data);
     }
 
@@ -28,16 +28,15 @@ class UserController extends Controller
 
     public function UserStore(Request $request)
     {
-
         $validatedData = $request->validate([
             'email' => 'required|unique:users',
-            'name' => 'required',
+            'full_name' => 'required',
         ]);
 
         $data = new User();
         $random = "0JAK2LBM3NCO4PDQ5RES6TFU7VGW8XHY9ZI";
         $code = substr(str_shuffle($random), 0, 8);
-        $data->usertype = 'Admin';
+        $data->user_type = 'Admin';
         $data->role = $request->role;
         $data->name = $request->name;
         $data->email = $request->email;

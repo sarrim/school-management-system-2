@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('backend/images/favicon.ico') }}">
 
-    <title>Your Brand - Pendaftaran </title>
+    <title>School Management - SolCBE </title>
 
     <!-- Vendors Style-->
     <link rel="stylesheet" href="{{ asset('backend/css/vendors_css.css') }}">
@@ -29,8 +29,8 @@
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-4 col-md-5 col-12">
                         <div class="content-top-agile p-10">
-                            <h2 class="text-white">PENDAFTARAN</h2>
-                            <p class="text-white-50">School Management System</p>
+                            <h2 class="text-white">Create Account</h2>
+                            <p class="text-white-50">School Management SolCBE</p>
                         </div>
                         <div class="p-30 rounded30 box-shadowed b-2 b-dashed">
 
@@ -41,7 +41,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text bg-transparent text-white"><i class="ti-user"></i></span>
                                         </div>
-                                        <input id="name" type="text" name="name" :value="old('name')" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Nama Lengkap" required autofocus autocomplete="name">
+                                        <input id="name" type="text" name="full_name" :value="old('full_name')" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Full Nama" required autofocus autocomplete="name">
                                     </div>
                                 </div>
                                 <div class="form-group">

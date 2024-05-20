@@ -26,11 +26,11 @@ $route = Route::current()->getName();
             <li class="{{ $route == 'dashboard' ? 'active' : '' }}">
                 <a href="{{ route('dashboard') }}">
                     <i data-feather="grid"></i>
-                    <span>Beranda</span>
+                    <span>Home Page</span>
                 </a>
             </li>
 
-            <li class="header nav-small-cap">Pengguna</li>
+            <li class="header nav-small-cap">User</li>
             @if (Auth::user()->role == 'Admin')
                 <li class="treeview {{ $prefix == '/users' ? 'active' : '' }}">
                     <a href="#">
@@ -48,63 +48,63 @@ $route = Route::current()->getName();
 
             <li class="treeview {{ $prefix == '/profile' ? 'active' : '' }}">
                 <a href="#">
-                    <i class="fa fa-solid fa-user"></i> <span>Kelola Profil</span>
+                    <i class="fa fa-solid fa-user"></i> <span>Manage Profile</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('profile.view') }}"><i class="ti-more"></i>Profil Saya</a></li>
-                    <li><a href="{{ route('password.view') }}"><i class="ti-more"></i>Kata Sandi</a></li>
+                    <li><a href="{{ route('profile.view') }}"><i class="ti-more"></i>My Profile</a></li>
+                    <li><a href="{{ route('password.view') }}"><i class="ti-more"></i>Manage Password</a></li>
                 </ul>
             </li>
 
-            <li class="header nav-small-cap">Kesiswaan</li>
+            <li class="header nav-small-cap">Student Management</li>
             <li class="treeview {{ $prefix == '/administrations' ? 'active' : '' }}">
                 <a href="#">
-                    <i class="fa fa-solid fa-book"></i><span>Administrasi</span>
+                    <i class="fa fa-solid fa-book"></i><span>Administration</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('student.class.view') }}"><i class="ti-more"></i>Kelas Siswa</a></li>
-                    <li><a href="{{ route('student.year.view') }}"><i class="ti-more"></i>Tahun Angkatan</a></li>
-                    <li><a href="{{ route('student.group.view') }}"><i class="ti-more"></i>Jurusan</a></li>
-                    <li><a href="{{ route('student.shift.view') }}"><i class="ti-more"></i>Shift Siswa</a></li>
-                    <li><a href="{{ route('fee.category.view') }}"><i class="ti-more"></i>Kategori Pembayaran</a></li>
-                    <li><a href="{{ route('fee.amount.view') }}"><i class="ti-more"></i>Kelola Tagihan</a></li>
-                    <li><a href="{{ route('exam.type.view') }}"><i class="ti-more"></i>Ujian Siswa</a></li>
-                    <li><a href="{{ route('school.subject.view') }}"><i class="ti-more"></i>Mata Pelajaran</a></li>
-                    <li><a href="{{ route('assign.subject.view') }}"><i class="ti-more"></i>Kurikulum</a></li>
-                    <li><a href="{{ route('designation.view') }}"><i class="ti-more"></i>Jabatan Sekolah</a></li>
+                    <li><a href="{{ route('student.class.view') }}"><i class="ti-more"></i>Student Class</a></li>
+                    <li><a href="{{ route('student.year.view') }}"><i class="ti-more"></i>Class Year</a></li>
+                    <li><a href="{{ route('student.group.view') }}"><i class="ti-more"></i>Group/Major</a></li>
+                    <li><a href="{{ route('student.shift.view') }}"><i class="ti-more"></i>Student Shift</a></li>
+                    <li><a href="{{ route('fee.category.view') }}"><i class="ti-more"></i>Fees Category</a></li>
+                    <li><a href="{{ route('fee.amount.view') }}"><i class="ti-more"></i>Payments</a></li>
+                    <li><a href="{{ route('exam.type.view') }}"><i class="ti-more"></i>Student Exams</a></li>
+                    <li><a href="{{ route('school.subject.view') }}"><i class="ti-more"></i>Subjects</a></li>
+                    <li><a href="{{ route('assign.subject.view') }}"><i class="ti-more"></i>Assign Subjects</a></li>
+                    <li><a href="{{ route('designation.view') }}"><i class="ti-more"></i>Designation</a></li>
                 </ul>
             </li>
 
             <li class="treeview {{ $prefix == '/students' ? 'active' : '' }}">
                 <a href="#">
                     <i class="fa fa-solid fa-graduation-cap"></i>
-                    <span>Manajemen Siswa</span>
+                    <span>Student Management</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('student.registration.view') }}"><i class="ti-more"></i>Pendaftaran Siswa</a>
+                    <li><a href="{{ route('student.registration.view') }}"><i class="ti-more"></i>Student Registration</a>
                     <li><a href="{{ route('roll.generate.view') }}"><i class="ti-more"></i>Roll Generate</a>
-                    <li><a href="{{ route('registration.fee.view') }}"><i class="ti-more"></i>Biaya Pendaftaran</a>
+                    <li><a href="{{ route('registration.fee.view') }}"><i class="ti-more"></i>Registration Fee</a>
                     </li>
                 </ul>
             </li>
 
 
 
-            <li class="header nav-small-cap">Kepegawaian</li>
+            <li class="header nav-small-cap">Staff</li>
 
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-solid fa-users-gear"></i>
-                    <span>Manajemen Pegawai</span>
+                    <span>Employee Management</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
